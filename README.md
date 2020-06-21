@@ -88,6 +88,18 @@ close the terminal and check the process
 ps aux | grep randwal
 ```
 
+### randwal issue, command not found!
+
+make sure that you have .local/bin directory if none create one and add this command to your .bashrc, .zshrc, ,anyshrc file..
+```
+on your terminal:
+$ echo $PATH
+
+
+on your .rc file, copy the path and add it along with the /home/user/.local/bin path.
+export PATH=/your/copied/path:/home/user/.local/bin
+```
+
 ---
 # pywal Installation (core package)
 ---

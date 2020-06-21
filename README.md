@@ -5,7 +5,7 @@ Have you ever getting bored of your terminal colors / vim / wallpaper over and o
 
 If you are like me then this is for you.
 
-![randwal.gif](https://github.com/catx0rr/randwal/tree/master/img/randwal.gif)
+![randwal](https://github.com/catx0rr/randwal/tree/master/img/randwal.gif)
 
 Works best for minimal wallpapers.
 

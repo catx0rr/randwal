@@ -41,11 +41,11 @@ Edit ~/.local/bin/randwal and set intervals to whatever time you like in seconds
 
 ### I want to change the default directory where should I look?
 
-Same thing. all config variables are inside the randwal script. edit ~/.local/bin/randwal
+Same thing. all config variables are inside the randwal script. Edit ~/.local/bin/randwal
 
-### I want to change the monochromatic colors of the wallpaper?
+### I want to change the tone of the monochromatic colors of my terminal?
 
-There is no specific option for that, but you can change it randomly in ~/.local/bin/randwal randsaturate set to True.
+There is no specific option for that, but it can randomly change in ~/.local/bin/randwal randsaturate set to True.
 
 ### I want to customize my vim to get the same colors as my terminal what should I do?
 

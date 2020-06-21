@@ -4,14 +4,14 @@ from time import sleep
 from os import system, listdir
 from random import uniform, choice
 
-# If you want a static configuration for your pywal
+# If you want a static configuration for your pywal-randwal
 # comment out @interval(intervals) on line 75
 
 # Change these values for your customization
 
 directory = '/home/user/Pictures/'              # change user to your username
-randsaturate = False
-intervals = 1800
+randsaturate = False                            # Add chromatic saturation randomly
+intervals = 1800                                # 30 minutes
 
 # Do not change the code from below
 
@@ -61,7 +61,7 @@ def interval(function):
         while True:
             function(*args, **kwargs)
            # Change in 30 minutes
-           sleep(5)
+           sleep(30)
     return funcwrapper
 """
 

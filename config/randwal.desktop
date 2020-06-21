@@ -4,8 +4,8 @@ Name=randwal
 GenericName=colorscheme
 Comment=stupidly elegant
 Icon=gnome-info
-Exec=nohup python3 /home/username/.local/bin/randwal
-Terminal=True
+Exec=python3 /home/user/.local/bin/randwal      # change this according to your username
+Terminal=False
 Type=Application
 Categories=Utility;
 

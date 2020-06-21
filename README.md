@@ -5,7 +5,7 @@ Have you ever getting bored of your terminal colors / vim / wallpaper over and o
 
 If you are like me then this is for you.
 
-![pywal_colorscheme](https://github.com/catx0rr/randwal/blob/master/screenshots/sample.png)
+![pywal_colorscheme](https://gfycat.com/amplelikelydodo)
 
 # Requirements
 ---

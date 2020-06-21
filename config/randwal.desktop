@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=randwal
+GenericName=colorscheme
+Comment=stupidly elegant
+Icon=gnome-info
+Exec=nohup python3 /home/username/.local/bin/randwal
+Terminal=True
+Type=Application
+Categories=Utility;
+
+X-GNOME-Autostart-enabled=true
+X-GNOME-Autostart-Delay=0

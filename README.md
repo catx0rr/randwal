@@ -5,7 +5,9 @@ Have you ever getting bored of your terminal colors / vim / wallpaper over and o
 
 If you are like me then this is for you.
 
-<iframe src='https://gfycat.com/ifr/AmpleLikelyDodo' frameborder='0' scrolling='no' allowfullscreen width='640' height='564'></iframe>
+![randwal.gif](https://github.com/catx0rr/randwal/tree/master/img/randwal.gif)
+
+Works best for minimal wallpapers.
 
 # Requirements
 ---

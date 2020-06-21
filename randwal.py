@@ -11,7 +11,7 @@ from random import uniform, choice
 
 directory = '/home/catx0rr/Pictures/'
 randsaturate = False
-intervals = 5
+intervals = 1800
 
 # Do not change the code from below
 

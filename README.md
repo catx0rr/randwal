@@ -37,30 +37,41 @@ $ randwal &
 FAQS
 ---
 I want to change the default time of 30 minutes.
-- edit ~/.local/bin/randwal and set intervalinsec to whatever time you like in seconds.
 
-I want to change the default directory where should I look?
-- same thing. all config variables are inside the randwal script. edit ~/.local/bin/randwal
+edit ~/.local/bin/randwal and set intervalinsec to whatever time you like in seconds.
 
-I want to change the monochromatic colors of the wallpaper?
-- there is no specific option for that, but you can change it randomly in ~/.local/bin/randwal randsaturate set to True.
+### I want to change the default directory where should I look?
 
-I want to customize my vim to get the same colors as my terminal what should I do?
-- google. Nah, all you need to do is to install the [vim plugin](https://github.com/dylanaraps/wal.vim) by the same colorscheme developer.
+same thing. all config variables are inside the randwal script. edit ~/.local/bin/randwal
 
-I want to automate it after I reboot my nix machine do I need to do anything special?
-- not really. you just need to create a cronjob. It is stated on the randwal installation procedure
+### I want to change the monochromatic colors of the wallpaper?
 
-When I close the terminal, the randwal script process is getting terminated, what should I do?
-- verify first the process by executing:
-    -```ps aux | grep randwal```
+there is no specific option for that, but you can change it randomly in ~/.local/bin/randwal randsaturate set to True.
 
-    - if there are no processes, create one by executing this command or you may check this [blog](https://janakiev.com/blog/python-background/):
-        -```nohup ~/.local/bin/randwal > /tmp/nohup.log &```
-    
-    - close the terminal and check the process
-        -```ps aux | grep randwal```
+### I want to customize my vim to get the same colors as my terminal what should I do?
 
+google. Nah, all you need to do is to install the [vim plugin](https://github.com/dylanaraps/wal.vim) by the same colorscheme developer.
+
+### I want to automate it after I reboot my nix machine do I need to do anything special?
+
+not really. you just need to create a cronjob. It is stated on the randwal installation procedure
+
+### When I close the terminal, the randwal script process is getting terminated, what should I do?
+
+verify first the process by executing this command
+```
+ps aux | grep randwal
+```
+
+if there are no processes, create one by executing this command or you may check this [blog](https://janakiev.com/blog/python-background/)
+```
+nohup ~/.local/bin/randwal > /tmp/nohup.log &
+```
+
+close the terminal and check the process
+```
+ps aux | grep randwal
+```
 
 
 # Requirements

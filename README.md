@@ -139,8 +139,6 @@ import colorscheme from 'wal' asynchronously
 # To add support for TTYs this line can be optionally added.
 source ~/.cache/wal/colors-tty.sh
 # Troubleshooting
-
-for more documentation kindly check pywal [official repository](https://github.com/dylanaraps/pywal)
 ```
 
 # Pywal Troubleshooting

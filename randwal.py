@@ -9,7 +9,7 @@ from random import uniform, choice
 
 # Change these values for your customization
 
-directory = '/home/catx0rr/Pictures/'
+directory = '/home/user/Pictures/'              # change user to your username
 randsaturate = False
 intervals = 1800
 

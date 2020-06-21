@@ -5,7 +5,7 @@ Have you ever getting bored of your terminal colors / background over and over?
 
 If you are like me then this is for you.
 
-![randwalimg]()
+![pywal_colorscheme](https://github.com/catx0rr/randwal/blob/master/screenshots/sample.png)
 
 # Requirements
 ---
@@ -14,11 +14,9 @@ If you are like me then this is for you.
 - pywal and imagemagick
 - Your brain
 
-# Sample Screenshot
+# More Screenshots
 ---
-![]()
-
-View more [here]()
+View more [here](https://github.com/catx0rr/randwal/tree/master/screenshots)
 
 # Installation (randwal)
 ---

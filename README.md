@@ -4,19 +4,24 @@ pywal randomizer for your setup customization
 Have you ever getting bored of your terminal colors / background over and over?
 
 If you are like me then this is for you.
- 
+
+![randwalimg]()
+
 # Requirements
 ---
 - A nix machine
 - Python3.6+
+- pywal and imagemagick
 - Your brain
+
+# Sample Screenshot
+---
+![]()
+
+View more [here]()
 
 # Installation (randwal)
 ---
-Create a cron job and add this line (Change the user to your username)
-```
-@reboot /home/user/.local/sh/pywal.sh
-```
 
 Create a 'sh' directory and copy pywal.sh
 ```
@@ -29,16 +34,16 @@ Copy randwal to your bin local directory
 cp randwal ~/.local/bin/
 ```
 
-Testing the script on your termina. (Make sure there are .jpg, .png files inside ~/Pictures/ directory)
+Testing the script on your terminal. (Make sure there are .jpg, .png files inside ~/Pictures/ directory)
 ```
 $ randwal &
 ```
 
 FAQS
 ---
-I want to change the default time of 30 minutes.
+### I want to change the default time of 30 minutes.
 
-edit ~/.local/bin/randwal and set intervalinsec to whatever time you like in seconds.
+edit ~/.local/bin/randwal and set intervals to whatever time you like in seconds.
 
 ### I want to change the default directory where should I look?
 
@@ -52,9 +57,21 @@ there is no specific option for that, but you can change it randomly in ~/.local
 
 google. Nah, all you need to do is to install the [vim plugin](https://github.com/dylanaraps/wal.vim) by the same colorscheme developer.
 
-### I want to automate it after I reboot my nix machine do I need to do anything special?
+### How do I make the script run after I reboot?
 
-not really. you just need to create a cronjob. It is stated on the randwal installation procedure
+the answer is trivial, you need to create a cron job.
+
+create a cron job and add this line (Change the user to your username)
+```
+@reboot /home/user/.local/sh/pywal.sh
+```
+and then call the pywal.sh script.
+
+create a 'sh' directory and copy pywal.sh
+```
+mkdir ~/.local/sh
+cp pywal.sh ~/.local/sh/
+```
 
 ### When I close the terminal, the randwal script process is getting terminated, what should I do?
 
@@ -73,10 +90,8 @@ close the terminal and check the process
 ps aux | grep randwal
 ```
 
-
-# Requirements
 ---
-## pywal Installation (core package)
+# pywal Installation (core package)
 ---
 ### System-wide install (sudo)
 ```

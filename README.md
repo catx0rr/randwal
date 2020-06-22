@@ -1,17 +1,16 @@
-# randwal
-pywal randomizer for your setup customization
+# randwal - a simple randomizer script for pywal colorscheme
 
-Have you ever getting bored of your terminal colors / vim / wallpaper over and over?
+Have you ever get bored of your terminal colors / vim / wallpaper over and over?
 
 If you are like me then this is for you.
 
 ![randwal demo](https://github.com/catx0rr/randwal/blob/master/img/randwal.gif)
 
-Works best for minimal wallpapers.
+Monochromatic colors works best for minimal wallpapers.
 
 # Requirements
 ---
-- A nix machine
+- A unix-like machine
 - Python3.6+
 - pywal and imagemagick
 - Your brain
@@ -47,13 +46,14 @@ Same thing. all config variables are inside the randwal script. Edit ~/.local/bi
 
 There is no specific option for that, but it can randomly change in ~/.local/bin/randwal randsaturate set to True.
 
-### I want to customize my vim to get the same colors as my terminal what should I do?
+### My vim colors is not changing whenever randwal / pywal changes its colors. What should I do?
 
 Google. Nah, all you need to do is to install the [vim plugin](https://github.com/dylanaraps/wal.vim) manually or your favorite vim plugin manager.
 
 ### How do I make the script run after I reboot?
 
-I tried a cronjob for user on this but it failed, I found a simple solution on this. Copy the randwal.desktop file and put it on your autostart. Make sure you change the user to your username.
+Tried to do a cronjob but it didn't work. I do not want to complicate things and  I found a simple solution for this issue. Copy the randwal.desktop file and put it on your autostart. Make sure you change the user to your username inside the config.
+
 ```
 cp config/randwal.desktop ~/.config/autostart/
 ```
@@ -87,7 +87,7 @@ export PATH=/your/copied/path:/home/user/.local/bin
 ```
 
 ---
-# pywal Installation (core package)
+# Pywal Installation (core package)
 ---
 ### System-wide install (sudo)
 ```
@@ -102,7 +102,7 @@ export PATH=/your/copied/path:/home/user/.local/bin
 ---
 Debian / Ubuntu Distros:
 
-Pywal doesn't come with imagemagick, to generate colors install it by executing this command
+Pywal doesn't come with imagemagick in order to generate colors, install it by executing this command.
 ```
     sudo apt install -y imagemagick
 ```
@@ -117,7 +117,7 @@ Fedora / RedHat:
     dnf install -y imagemagick
 ```
 
-# Pywal Usage and Configuration setup to work with randwal accordingly
+# Pywal Usage and Configuration setup for randwal
 ---
 Change color scheme and terminal colors.
 ```

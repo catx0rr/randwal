@@ -4,10 +4,11 @@ Name=randwal
 GenericName=colorscheme
 Comment=stupidly elegant
 Icon=gnome-info
-Exec=python3 /home/user/.local/bin/randwal      # change this according to your username
+Exec=python3 /home/catx0rr/.local/bin/randwal       # change this according to your username
 Terminal=False
 Type=Application
 Categories=Utility;
 
-X-GNOME-Autostart-enabled=true
-X-GNOME-Autostart-Delay=0
+# This setting is for GNOME DE, but even without this it should work.
+#X-GNOME-Autostart-enabled=true
+#X-GNOME-Autostart-Delay=0

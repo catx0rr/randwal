@@ -5,7 +5,7 @@ from os import system, listdir
 from random import uniform, choice
 
 # If you want a static configuration for your pywal-randwal
-# comment out @interval(intervals) on line 75
+# comment out @interval(intervals) on line 77
 
 # Change these values for your customization
 
@@ -13,7 +13,7 @@ directory = '/home/user/Pictures/'              # change user to your username
 randsaturate = False                            # Add chromatic saturation randomly
 intervals = 1800                                # 30 minutes
 
-# Do not change the code from below
+# Do not change the code below
 
 def randfile(directory):
     return choice(listdir(directory))
@@ -40,16 +40,18 @@ def changetheme(filename, saturation=False):
         system(cmd)
         system(preview)
 
+
 def interval(intervaltime):
-    
+
     def real_interval_decorator(function):
-        
+
         def wrapper(*args, **kwargs):
             while True:
                 function(*args, **kwargs)
                 # Change on user specification
                 sleep(intervaltime)
         return wrapper
+
     return real_interval_decorator
 
 """

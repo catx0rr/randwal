@@ -5,7 +5,7 @@ from os import system, listdir
 from random import uniform, choice
 
 # If you want a static configuration for your pywal-randwal
-# comment out @interval(intervals) on line 77
+# comment out @interval(intervals) on line 58
 
 # Change these values for your customization
 
@@ -54,25 +54,6 @@ def interval(intervaltime):
 
     return real_interval_decorator
 
-"""
-Old decorator function with hardcoded interval
-def interval(function):
-
-    # Decorator function for interval calls
-    def funcwrapper(*args, **kwargs):      
-        while True:
-            function(*args, **kwargs)
-           # Change in 30 minutes
-           sleep(30)
-    return funcwrapper
-"""
-
-"""
-NOTE:
-
-Remove the @interval decorator if you don't want to change 
-wallpapers / theme in interval.
-"""
 
 @interval(intervals)
 def main(directory, saturation):

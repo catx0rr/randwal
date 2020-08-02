@@ -4,14 +4,19 @@ DIR=$(dirname $0)
 
 source $DIR/../
 
-core_script(){
-    cp -rf $DIR/randwal.py ~/.local/bin/randwal
+core_package() {
+    pip3 install --user pywal
+    export PATH="${PATH}:${HOME}/.local/bin"
+}
 
-    sed -i s/user/$(whoami)/g ~/.local/bin/randwal
+core_script(){
+    cp -rf $DIR/randwal.py ${HOME}/.local/bin/randwal
+
+    sed -i s/user/$(whoami)/g ${HOME}/.local/bin/randwal
 }
 
 persist_on_reboot() {
-    cp -rf $DIR/config/randwal.desktop ~/.config/autostart
+    cp -rf $DIR/config/randwal.desktop ${HOME}/.config/autostart
 
-    sed -i s/user/$(whoami)/g ~/.config/autostart/randwal.desktop
+    sed -i s/user/$(whoami)/g ${HOME}/.config/autostart/randwal.desktop
 }

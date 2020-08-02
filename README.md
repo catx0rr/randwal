@@ -12,19 +12,27 @@ Monochromatic colors works best for minimal wallpapers.
 ---
 - A unix-like machine
 - Python3.6+
-- pywal and imagemagick
-- Your brain
+- [pywal](https://github.com/catx0rr/randwal#pywal-installation-core-package) and [dependencies](https://github.com/catx0rr/randwal#dependencies)
+- DE: gnome, xfce  
+- WM: i3, i3gaps
+
+You may check pywal documentations for more info
 
 # More Screenshots
 ---
 View more [here](https://github.com/catx0rr/randwal/tree/master/screenshots)
 
-# Installation (randwal)
+# Installation (Manual)
 ---
 
 Just copy randwal to your bin local directory. Ensure to rename copy it to randwal (without .py)
 ```
 cp randwal.py ~/.local/bin/randwal
+```
+Change the user in config/randwal.desktop and copy it in autostart.
+```
+/home/your_username/.local/bin/randwal
+cp config/randwal.desktop ~/.config/autostart/randwal.desktop
 ```
 
 Testing the script on your terminal. (Make sure there are .jpg, .png files inside ~/Pictures/ directory)
@@ -32,6 +40,16 @@ Testing the script on your terminal. (Make sure there are .jpg, .png files insid
 $ randwal &
 ```
 
+# Installation (script)
+---
+
+Just run the shell script
+```
+chmod u+x install.sh
+./install.sh
+```
+
+---
 FAQS
 ---
 ### I want to change the default time of 30 minutes.
@@ -79,11 +97,9 @@ ps aux | grep randwal
 
 make sure that you have .local/bin directory if none create one and add this command to your .bashrc, .zshrc, ,anyshrc file..
 ```
-on your terminal:
-$ echo $PATH
-
 on your .rc file, copy the path and add it along with the /home/user/.local/bin path.
-export PATH=/your/copied/path:/home/user/.local/bin
+
+export PATH=$PATH:/home/user/.local/bin
 ```
 
 ---
@@ -102,19 +118,19 @@ export PATH=/your/copied/path:/home/user/.local/bin
 ---
 Debian / Ubuntu Distros:
 
-Pywal doesn't come with imagemagick in order to generate colors, install it by executing this command.
+Pywal doesn't come with imagemagick and some other dependencies. In order to generate colors, install it by executing this command.
 ```
-    sudo apt install -y imagemagick
+    sudo apt install -y imagemagick hsetroot nitrogen
 ```
 
 Arch:
 ```
-    pacman -S imagemagick
+    pacman -S imagemagick hsetroot nitrogen
 ```
 
 Fedora / RedHat:
 ```
-    dnf install -y imagemagick
+    dnf install -y imagemagick hsetroot nitrogen
 ```
 
 # Pywal Usage and Configuration setup for randwal

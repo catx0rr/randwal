@@ -1,0 +1,17 @@
+#!/bin/bash
+
+DIR=$(dirname $0)
+
+source $DIR/../
+
+core_script(){
+    cp -rf $DIR/randwal.py ~/.local/bin/randwal
+
+    sed -i s/user/$(whoami)/g ~/.local/bin/randwal
+}
+
+persist_on_reboot() {
+    cp -rf $DIR/config/randwal.desktop ~/.config/autostart
+
+    sed -i s/user/$(whoami)/g ~/.config/autostart/randwal.desktop
+}

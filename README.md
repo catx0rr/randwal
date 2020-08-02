@@ -54,23 +54,23 @@ FAQS
 ---
 ### I want to change the default time of 30 minutes.
 
-Edit ~/.local/bin/randwal and set intervals to whatever time you like in seconds.
+> Edit ~/.local/bin/randwal and set intervals to whatever time you like in seconds.
 
 ### I want to change the default directory where should I look?
 
-Same thing. all config variables are inside the randwal script. Edit ~/.local/bin/randwal
+> Same thing. all config variables are inside the randwal script. Edit ~/.local/bin/randwal
 
 ### I want to change the tone of the monochromatic colors of my terminal?
 
-There is no specific option for that, but it can randomly change in ~/.local/bin/randwal randsaturate set to True.
+> There is no specific option for that, but it can randomly change in ~/.local/bin/randwal randsaturate set to True.
 
 ### My vim colors is not changing whenever randwal / pywal changes its colors. What should I do?
 
-Google. Nah, all you need to do is to install the [vim plugin](https://github.com/dylanaraps/wal.vim) manually or your favorite vim plugin manager.
+> Google. Nah, all you need to do is to install the [vim plugin](https://github.com/dylanaraps/wal.vim) manually or your favorite vim plugin manager.
 
 ### How do I make the script run after I reboot?
 
-Tried to do a cronjob but it didn't work. I do not want to complicate things and  I found a simple solution for this issue. Copy the randwal.desktop file and put it on your autostart. Make sure you change the user to your username inside the config.
+> Tried to do a cronjob but it didn't work. I do not want to complicate things and  I found a simple solution for this issue. Copy the randwal.desktop file and put it on your autostart. Make sure you change the user to your username inside the config.
 
 ```
 cp config/randwal.desktop ~/.config/autostart/
@@ -125,12 +125,12 @@ Pywal doesn't come with imagemagick and some other dependencies. In order to gen
 
 Arch:
 ```
-    pacman -S imagemagick hsetroot nitrogen
+    sudo pacman -S imagemagick hsetroot nitrogen
 ```
 
-Fedora / RedHat:
+Fedora / CentOS:
 ```
-    dnf install -y imagemagick hsetroot nitrogen
+    sudo dnf install -y imagemagick hsetroot nitrogen
 ```
 
 # Pywal Usage and Configuration setup for randwal

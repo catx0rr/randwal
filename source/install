@@ -2,7 +2,7 @@
 
 DIR=$(dirname $0)
 
-source $DIR/../
+source $DIR/.. 2>/dev/null
 
 core_package() {
     pip3 install --user pywal

@@ -10,6 +10,20 @@ DIR=$(dirname $0)
 
 source $DIR/source/install
 
+banner(){
+
+  banner='
+
+    ____                  __               __
+   / __ \____ _____  ____/ /      ______ _/ /
+  / /_/ / __ `/ __ \/ __  / | /| / / __ `/ / 
+ / _, _/ /_/ / / / / /_/ /| |/ |/ / /_/ / /  
+/_/ |_|\__,_/_/ /_/\__,_/ |__/|__/\__,_/_/   
+                PYWAL colorscheme randomizer '
+
+echo -e "$banner"
+}
+
 install_randwal() {
     core_package
     core_script
@@ -18,11 +32,12 @@ install_randwal() {
 }
 
 main() {
-    echo "Installing randwal.."
+    banner
+    echo -e "\nInstalling randwal..\n"
     sleep 1
     install_randwal
     sleep 2
-    echo -e "Done.\nExecute randwal command and ensure that you have .jpg,.png files on your ~/Pictures directory."
+    echo -e "\nDone.\n\nExecute randwal command and ensure that you have .jpg,.png files on your ~/Pictures directory."
 
 }
 

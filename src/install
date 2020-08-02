@@ -1,5 +1,18 @@
 #!/bin/bash
 
+conf='
+
+## WAL CONFIG
+import colorscheme from 'wal' asynchronously
+# &   # Run the process in the background.
+# ( ) # Hide shell job control messages.
+(cat ~/.cache/wal/sequences &)
+
+# To add support for TTYs this line can be optionally added.
+source ~/.cache/wal/colors-tty.sh
+# Troubleshooting
+'
+
 DIR=$(dirname $0)
 
 source $DIR/.. 2>/dev/null
@@ -11,14 +24,13 @@ core_package() {
 
 core_script(){
     cp -rf $DIR/randwal.py ${HOME}/.local/bin/randwal
-
     sed -i s/user/$(whoami)/g ${HOME}/.local/bin/randwal
 }
 
 persist_on_reboot() {
     cp -rf $DIR/config/randwal.desktop ${HOME}/.config/autostart
-
     sed -i s/user/$(whoami)/g ${HOME}/.config/autostart/randwal.desktop
+    echo "$conf" >> ${HOME}/.bashrc
 }
 
 sample_wallpapers() {

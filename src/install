@@ -20,3 +20,7 @@ persist_on_reboot() {
 
     sed -i s/user/$(whoami)/g ${HOME}/.config/autostart/randwal.desktop
 }
+
+sample_wallpapers() {
+    cp -rf $DIR/sample/* ${HOME}/Pictures
+}

@@ -8,7 +8,7 @@
 
 DIR=$(dirname $0)
 
-source $DIR/source/install
+source $DIR/src/install
 
 banner(){
 
@@ -28,7 +28,7 @@ install_randwal() {
     core_package
     core_script
     persist_on_reboot
-
+    sample_wallpapers
 }
 
 main() {
